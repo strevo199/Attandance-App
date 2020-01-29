@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(140deg, rgba(0, 0, 0, 0.171),rgba(0, 0, 0, 0.295),rgba(0, 0, 0, 0.041));
+    min-height: 90vh;
+    
+    margin:1vh 3vh;
+    font:16px/1.4 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+/* nav */
+#nav-bar{
+    padding: 1vh;
+    color: white;
+    display: flex;
+    text-transform: uppercase;
+}
+.nav-bar{
+    background-color:#4D72C5;
+    padding:2vh 0;
+    margin-bottom: 0.5vh;
+    border-radius:0 0 10vh 10vh;
+    -webkit-border-radius:0 0 10vh 10vh;
+    -moz-border-radius:0 0 10vh 10vh;
+    -ms-border-radius:0 0 10vh 10vh;
+    -o-border-radius:0 0 10vh 10vh;
+}
+.clear-btn{
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px black;
+    font-size: 15px;
+    font-weight:bold;
+    background: linear-gradient(30deg,rgba(50, 205, 171, 0.87),rgba(0, 0, 0, 0.466),rgb(50, 205, 171));
+}
+
+.heading{
+    flex: 2;
+}
+
+/* form */
+ .card{
+    background:linear-gradient(rgba(161, 77, 197, 0.322),rgba(161, 77, 197, 0.342));
+    border-radius:10vh 10vh 0 0 ;
+    -webkit-border-radius:10vh 10vh 0 0 ;
+    -moz-border-radius:10vh 10vh 0 0 ;
+    -ms-border-radius:10vh 10vh 0 0 ;
+    -o-border-radius:10vh 10vh 0 0 ;
+    padding-bottom: 1vh;
+}
+
+.maddy{
+    display: grid;
+    grid-template-columns:50% 50%;
+    padding:2vh;
+    grid-column-gap: 1vh;
+    margin: 2vh;
+}
+.input-field{
+    display: grid;
+}
+
+
+.btn{
+    padding: 2vh 3vh;
+    display: inline;
+    outline: none;
+    border:  none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color:rgb(109, 13, 13);
+    font-weight:bold;
+}
+
+.form-control{
+    padding: 2vh;
+    background-color: transparent;
+    color: black;
+    outline: none;
+    border-bottom: 2px solid rgb(78, 22, 22);
+    border-top:none;
+    border-right:2px solid rgb(78, 22, 22);
+    border-left:none;
+    font-weight:bold;
+    
+
+}
+#select-level{
+    color: black;
+}
+.btn-blue{
+    background:linear-gradient(10deg,blue,rgba(255, 255, 255, 0.486),blue)
+}
+.btn-orange{
+    background:linear-gradient(70deg,orange,rgba(255, 255, 255, 0.486),orange)
+}
+.btn-red{
+    background:linear-gradient(10deg,red,rgba(255, 255, 255, 0.686),red)
+}
+.btn-grey{
+    background:linear-gradient(10deg,rgb(66, 63, 63),rgba(255, 255, 255, 1),rgb(82, 78, 78))
+}
+
+.btn:hover{
+    font-weight: bolder;
+    color:white;
+    text-shadow: 1px 1px 2px black;
+    background: linear-gradient(30deg,rgba(50, 205, 171, 0.87),rgba(0, 0, 0, 0.466),rgb(50, 205, 171));
+    
+}
+.btn:active{
+    font-size: small;
+}
+
+.able{
+    background-color:rgba(44, 49, 25, 0.836);
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+.table,tr{
+    width: 100%;
+    text-align: center;
+}
+
+
+table, th,td{
+    border: solid 1px black;
+    border-collapse: collapse;
+}
+.table tr:nth-child(even){
+    background: grey;
+    color: white;
+
+}
+.table tr:nth-child(odd){
+    background: #eee;
+    color: black;
+}
+.table th{
+    background: grey;
+    color: white;
+    letter-spacing: 2px;
+}
+.table tr:hover{
+    font-style: italic;
+    color: white;
+    font-size: 17px;
+    background: linear-gradient(210deg,rgba(137, 43, 226, 0.301),rgba(137, 43, 226, 0.904),rgba(137, 43, 226, 0.233));
+}
+
+.mad{
+    display: flexbox;
+}
+.time{
+    flex: 2;
+    margin-right: 5px;
+}
+.edit-item{
+    color: red;
+    margin-left: 2vw;
+    
+}
+.edit-item:active{
+    color: white;
+    background-color: red;
+}
+.total-student{
+    font-size: 19px;
+    letter-spacing: 2px;
+    color: rgb(31, 43, 3);
+    font-weight: bold;
+}
+
+
+@media(max-width: 666px){
+ .maddy{
+     display: block;
+     margin-top: 1vh;
+ }
+
+ .clear-btn{
+     margin-left: 15vw;
+     font-size: 12px;
+     padding: 5px;
+     
+ }
+ #nav-bar h1{
+    margin-left: 5vw;
+    
+    font-size: 18px;
+ }
+ .form-control{
+     background-color: rgb(162, 202, 67);
+     font-size: 14px;
+ }
+
+}
+
+
+/* color{
+    #4D72C5
+    #A04DC5
+    #AEC54D
+} */

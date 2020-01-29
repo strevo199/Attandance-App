@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Attandance</title>
+</head>
+<body>
+        <div class="nav-bar">
+            <div class="container" id="nav-bar">
+                <h1 class="heading">Student Attandance App</h1>
+                <a href="#" class="clear-btn btn">Clear All</a>
+            </div>
+
+        </div>
+    
+       <div class="card">
+         <div class="container">
+            <form action="#" class="form-one">
+                <div class="maddy">
+                    <div class="input-field fill1">
+                        <label for="name"><small>Name</small></label>
+                        <input type="text" class="form-control" name="name" id="input-name" placeholder="enter name...">
+                    </div>
+                    <div class="input-field fill2>
+                        <label for="level"><small>Level</small></label>
+                        <select class="form-control"  name="" id="select-level">
+                            <option value="None">None</option>
+                            <option value="JSS 1">JSS1</option>
+                            <option value="JSS 2">JSS2</option>
+                            <option value="JSS 3">JSS3</option>
+                            <option value="SS 1">SS1</option>
+                            <option value="SS 2">SS2</option>
+                            <option value="SS 3">SS3</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="all-btn">
+                    <button class="add-btn btn btn-blue"><i class="fa fa-plus"> </i> Add Meal</button>
+                    <button class="update-btn btn btn-orange"><i class="fa fa-pencil-square-o"></i>  Update Meal</button>
+                    <button class="delete-btn btn btn-red"><i class="fa fa-remove"> Delete Meal</i></button>
+                    <button class="back-btn btn btn-grey pull-right"><i class="fa fa-chevron-circle-left" aria-hidden="true">Back</i></button>
+                </div>
+            </form>
+            <div class="total-student"></div>
+        </div>
+        </div>
+        <div class="able">
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name </th>
+                        <th>Class</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody id="item-list">
+                    <!-- <tr class= "item-cla" id="item-id">
+                        <td>stphen</td>
+                        <td>stphen</td>
+                        <td><span class="time">stphen<span><small><a href="#" ><i class="edit-item fa fa-pencil " aria-hidden="true"></i></a></small></td>
+                        
+                    </tr>
+                    <tr id="item-id">
+                          <td>stphen</td>
+                          <td>stphen</td>
+                          <td><span class="time">stphen<span><small><a href="#" ><i class="edit-item fa fa-pencil " aria-hidden="true"></i></a></small></td> 
+                        </tr>
+                      <tr id="item-id">
+                          <td>stphen</td>
+                          <td>stphen</td>
+                          <td><span class="time">stphen<span><small><a href="#" ><i class="edit-item fa fa-pencil " aria-hidden="true"></i></a></small></td>
+                        </tr>
+                     -->
+                </tbody>
+            </table>
+        </div>
+        </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
